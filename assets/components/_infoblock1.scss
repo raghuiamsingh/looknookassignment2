@@ -1,0 +1,84 @@
+.information-container {
+    color: $primary-color;
+    height: max-content;
+    background: $background-color;
+    .infoblock {
+        vertical-align: top;
+        text-align: center;
+        width: 30%;
+        margin: 13px;
+        display: inline-block;
+        h1 {
+            @extend %transform-uppercase;
+            margin-top: 0px;
+            @include setfontsize(26px);
+        }
+        p {
+            padding: 0px 20px;
+        }
+    }
+    
+    .separator {
+        text-align: center;
+        width: 100%;
+        display: none;
+        padding: 0px 0px 20px 0px;
+        span {
+            display: inline-block;
+            background: $theme-color;
+            height: 5px;
+            width: 12%;
+        }
+    }
+    
+    .duplicate-infoblock-2 {
+        background: $background-color;
+        top: 10%;
+        height: max-content;
+        display: none;
+        padding: 20px 60px;
+        margin-bottom: 20px;
+        .details-container {
+            .block-1 {
+                @extend %block-text;
+                letter-spacing: 0.32em;
+                @include setfontsize(26px);
+                padding-bottom: 5px;
+            }
+            .middle-block {
+                @extend %block-text;
+                @include setfontsize(16px);
+
+                .customhr-line {
+                    border-top: 4px solid $theme-color;
+                    width: 42%;
+                    margin: 0.5em 0;
+                }
+
+                span {
+                    padding: 0px 12px;
+                }
+            }
+            .block-2 {
+                @extend %block-text;
+                letter-spacing: 0.23em;
+                @include setfontsize(22px);
+                padding-bottom: 10px;
+                padding-top: 5px;
+            }
+            .info-button-container {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                padding-top: 17px;
+                button {
+                    @extend %button-design;
+                    @include setfontsize(19px);
+                    font-weight: normal;
+                    @include setborderradius(7px);
+                    padding: 16px 45px;
+                }
+            } 
+        }
+    }
+}

@@ -1,0 +1,981 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/*Add global CSS classes for basic transitions*/
+body {
+  font-family: "Roboto", serif;
+}
+
+.floatleft {
+  float: left;
+}
+
+.floatright {
+  float: right;
+}
+
+.clearfloat {
+  clear: both;
+}
+
+a.social-icon-link {
+  text-decoration: none;
+}
+
+.display-ib {
+  display: inline-block;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.paddingleft {
+  padding-left: 5%;
+}
+
+.paddingright {
+  padding-right: 5%;
+}
+
+.menupadding-left {
+  padding-left: 10%;
+}
+
+.menupadding-right {
+  padding-right: 10%;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*Add SCSS variable definitions*/
+/*Add Mixins*/
+/*Add placeholder classes*/
+.looknook_body .wrapper .footer .menu-footer .menu .up-arrow, .looknook_body .wrapper #header .main-menu .menu-part .down-arrow, .looknook_body .wrapper #header .cart-icon, .looknook_body .wrapper .header-part .head-right .quick-links .down-arrow {
+  display: inline-block;
+  height: 12px;
+  width: 14px;
+  background: url(../img/glyphicons-halflings-white.png);
+  background-repeat: no-repeat;
+  background-position: -263px -73px;
+  margin-right: 15px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.looknook_body .wrapper .getting-started .content-block .button-container button, .looknook_body .wrapper .subscriber-box .box-middle .subscribe-button, .looknook_body .wrapper .information-container .duplicate-infoblock-2 .details-container .info-button-container button, .looknook_body .wrapper .sliders-container .infoblock-2 .details-container .info-button-container button, .looknook_body .wrapper .sliders-container .slider-button .slider-button-container button, .looknook_body .wrapper #header #mobile-dashboard .dashboard-search .search-button, .looknook_body .wrapper .header-part .head-right .search-bar .search-button {
+  background-color: #9F0049;
+  border: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.looknook_body .wrapper .getting-started .get-started-header, .looknook_body .wrapper .information-container .infoblock h1, .looknook_body .wrapper #header .main-menu .menu-part .menu-ul .menu-li .menu-item, .looknook_body .wrapper #header #mobile-dashboard .dashboard-container .dashboard-row .dashboard-cell, .looknook_body .wrapper .information-container .duplicate-infoblock-2 .details-container .block-2, .looknook_body .wrapper .information-container .duplicate-infoblock-2 .details-container .middle-block, .looknook_body .wrapper .information-container .duplicate-infoblock-2 .details-container .block-1, .looknook_body .wrapper .sliders-container .infoblock-2 .details-container .block-2, .looknook_body .wrapper .sliders-container .infoblock-2 .details-container .middle-block, .looknook_body .wrapper .sliders-container .infoblock-2 .details-container .block-1 {
+  text-transform: uppercase;
+}
+
+.looknook_body .wrapper .information-container .duplicate-infoblock-2 .details-container .block-2, .looknook_body .wrapper .information-container .duplicate-infoblock-2 .details-container .middle-block, .looknook_body .wrapper .information-container .duplicate-infoblock-2 .details-container .block-1, .looknook_body .wrapper .sliders-container .infoblock-2 .details-container .block-2, .looknook_body .wrapper .sliders-container .infoblock-2 .details-container .middle-block, .looknook_body .wrapper .sliders-container .infoblock-2 .details-container .block-1 {
+  font-weight: bold;
+  color: #000000;
+}
+
+/*Add Custom CSS definitions*/
+.looknook_body {
+  background: url("../img/footerbg.png");
+}
+.looknook_body .wrapper {
+  max-width: 1200px;
+  margin: 37px 87px;
+  /*Add Main Header CSS Properties*/
+  /*Add Banners Slider CSS Properties*/
+  /*Add Carousel CSS Properties*/
+  /*Add Information Block 1 CSS Properties*/
+  /*Add Subscriber Box CSS Properties*/
+  /*Add Getting Started Block CSS Properties*/
+  /*Add Footer Block CSS Properties*/
+}
+.looknook_body .wrapper .header-part {
+  height: 115px;
+  background: #000000;
+}
+.looknook_body .wrapper .header-part .head-left {
+  height: 115px;
+  text-align: left;
+  width: 30%;
+  position: relative;
+}
+.looknook_body .wrapper .header-part .head-left .header-social-icons {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+.looknook_body .wrapper .header-part .head-left .header-social-icons .social-icon-holder {
+  display: inline-block;
+  background: url("../img/social_icon_small.png");
+  width: 24px;
+  height: 24px;
+}
+.looknook_body .wrapper .header-part .head-left .header-social-icons .icon-facebook {
+  background-position: 0px -40px;
+}
+.looknook_body .wrapper .header-part .head-left .header-social-icons .icon-pinterest {
+  background-position: 24px -40px;
+}
+.looknook_body .wrapper .header-part .head-left .header-social-icons .icon-twitter {
+  background-position: 46px -40px;
+}
+.looknook_body .wrapper .header-part .head-top .head-logo {
+  height: 115px;
+  text-align: center;
+  width: 40%;
+  position: relative;
+}
+.looknook_body .wrapper .header-part .head-top .head-logo .main-logo {
+  z-index: 600;
+  position: absolute;
+  left: 39%;
+  top: 50%;
+}
+.looknook_body .wrapper .header-part .head-top .head-logo .main-logo img {
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  transform: scale(1.4);
+}
+.looknook_body .wrapper .header-part .head-right {
+  width: 30%;
+}
+.looknook_body .wrapper .header-part .head-right .menu-icon {
+  text-align: right;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-right: 26px;
+  display: none;
+}
+.looknook_body .wrapper .header-part .head-right .search-bar {
+  display: inline-block;
+  margin: 20px 17px;
+}
+.looknook_body .wrapper .header-part .head-right .search-bar .search-input {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 4px 6px;
+}
+.looknook_body .wrapper .header-part .head-right .search-bar .search-button {
+  padding: 5px 11px;
+  margin-left: 5px;
+}
+.looknook_body .wrapper .header-part .head-right .quick-links {
+  display: inline-block;
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 6%;
+  margin-top: 5px;
+  font-size: 19px;
+}
+.looknook_body .wrapper .header-part .head-right .quick-links .arrow-cart {
+  margin-right: 0px;
+}
+.looknook_body .wrapper #header #mobile-dashboard {
+  z-index: 502;
+  display: none;
+  position: absolute;
+  color: #FFFFFF;
+  top: 77px;
+  width: 100%;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.9);
+}
+.looknook_body .wrapper #header #mobile-dashboard .dashboard-container {
+  width: 100%;
+  display: table;
+  padding-top: 80px;
+}
+.looknook_body .wrapper #header #mobile-dashboard .dashboard-container .dashboard-row {
+  display: table-row;
+}
+.looknook_body .wrapper #header #mobile-dashboard .dashboard-container .dashboard-row .dashboard-cell {
+  display: table-cell;
+  padding: 40px;
+  text-align: center;
+  width: 50%;
+  border: 1px solid #383838;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+.looknook_body .wrapper #header #mobile-dashboard .dashboard-search {
+  border-top: 1px solid #383838;
+  padding: 40px 0px;
+  text-align: center;
+}
+.looknook_body .wrapper #header #mobile-dashboard .dashboard-search .search-input {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 4px 6px;
+}
+.looknook_body .wrapper #header #mobile-dashboard .dashboard-search .search-button {
+  padding: 5px 11px;
+  margin-left: 5px;
+}
+.looknook_body .wrapper #header #mobile-dashboard .dashboard-header {
+  margin-top: -25px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+.looknook_body .wrapper #header .cart-icon {
+  background-position: -360px -121px;
+  -webkit-transform: scale(1.7);
+  -moz-transform: scale(1.7);
+  -ms-transform: scale(1.7);
+  -o-transform: scale(1.7);
+  transform: scale(1.7);
+  margin-right: 4px;
+}
+.looknook_body .wrapper #header .main-menu .menu-part {
+  height: 40px;
+  background: #F2F5EE;
+  width: 50%;
+  box-sizing: border-box;
+  display: table;
+  table-layout: fixed;
+}
+.looknook_body .wrapper #header .main-menu .menu-part .menu-ul {
+  display: table-row;
+}
+.looknook_body .wrapper #header .main-menu .menu-part .menu-ul .menu-li {
+  font-weight: bold;
+  line-height: 40px;
+  display: table-cell;
+  text-align: center;
+}
+.looknook_body .wrapper #header .main-menu .menu-part .menu-ul .menu-li .menu-item {
+  text-decoration: none;
+  color: #000000;
+}
+.looknook_body .wrapper #header .main-menu .menu-part .menu-ul .align-to-right {
+  text-align: right;
+}
+.looknook_body .wrapper #header .main-menu .menu-part .down-arrow {
+  background: url(../img/glyphicons-halflings.png);
+  background-position: -263px -73px;
+}
+.looknook_body .wrapper #header .main-menu .take-upspace {
+  width: 10%;
+}
+.looknook_body .wrapper #header .infoblock-1 .block-part {
+  height: 42px;
+  background: #9F0049;
+  width: 50%;
+  box-sizing: border-box;
+  display: table;
+  table-layout: fixed;
+}
+.looknook_body .wrapper #header .infoblock-1 .block-part .menu-ul {
+  display: table-row;
+}
+.looknook_body .wrapper #header .infoblock-1 .block-part .menu-ul .menu-li {
+  font-size: 20px;
+  line-height: 42px;
+  display: table-cell;
+  color: #EAEAEC;
+}
+.looknook_body .wrapper #header .infoblock-1 .take-upspace {
+  width: 10%;
+}
+.looknook_body .wrapper .sliders-container .cycle-slideshow, .looknook_body .wrapper .sliders-container .cycle-slideshow * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.looknook_body .wrapper .sliders-container .cycle-slideshow {
+  min-width: 200px;
+  margin: 0px auto;
+  padding: 0;
+  position: relative;
+  background: url(http://malsup.github.com/images/spinner.gif) 50% 50% no-repeat;
+}
+.looknook_body .wrapper .sliders-container .cycle-slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  min-height: 250px;
+  max-height: 360px;
+}
+.looknook_body .wrapper .sliders-container .cycle-slideshow img:first-child {
+  position: static;
+  z-index: 100;
+}
+.looknook_body .wrapper .sliders-container .cycle-slideshow .cycle-pager {
+  text-align: center;
+  width: 100%;
+  z-index: 500;
+  position: absolute;
+  bottom: 0px;
+  overflow: hidden;
+}
+.looknook_body .wrapper .sliders-container .cycle-slideshow .cycle-pager span {
+  font-size: 75px;
+  padding: 0px 15px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  color: #31312F;
+  cursor: pointer;
+}
+.looknook_body .wrapper .sliders-container .cycle-slideshow .cycle-pager span.cycle-pager-active {
+  color: #5F5F61;
+}
+.looknook_body .wrapper .sliders-container .cycle-slideshow .cycle-pager > * {
+  cursor: pointer;
+}
+.looknook_body .wrapper .sliders-container .divider {
+  height: 7px;
+}
+.looknook_body .wrapper .sliders-container .divider img {
+  width: 100%;
+  vertical-align: top;
+}
+.looknook_body .wrapper .sliders-container .slider-button {
+  position: absolute;
+  z-index: 501;
+  bottom: 0px;
+  left: 12%;
+}
+.looknook_body .wrapper .sliders-container .slider-button .slider-button-container button {
+  font-size: 17px;
+  padding: 10px 18px;
+  font-weight: normal;
+  -moz-border-radius: 7px 7px 0px 0px;
+  -webkit-border-radius: 7px 7px 0px 0px;
+  border-radius: 7px 7px 0px 0px;
+}
+.looknook_body .wrapper .sliders-container .infoblock-2 {
+  position: absolute;
+  z-index: 501;
+  width: 35%;
+  left: 60%;
+  background: rgba(243, 244, 236, 0.75);
+  top: 10%;
+  padding: 17px;
+  height: max-content;
+}
+.looknook_body .wrapper .sliders-container .infoblock-2 .details-container .block-1 {
+  letter-spacing: 0.34em;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+.looknook_body .wrapper .sliders-container .infoblock-2 .details-container .middle-block {
+  font-size: 18px;
+}
+.looknook_body .wrapper .sliders-container .infoblock-2 .details-container .middle-block .customhr-line {
+  border-top: 4px solid #9F0049;
+  width: 42%;
+  margin: 0.5em 0;
+}
+.looknook_body .wrapper .sliders-container .infoblock-2 .details-container .middle-block span {
+  padding: 0px 9px;
+}
+.looknook_body .wrapper .sliders-container .infoblock-2 .details-container .block-2 {
+  letter-spacing: 0.26em;
+  font-size: 21px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.looknook_body .wrapper .sliders-container .infoblock-2 .details-container .details-text {
+  font-size: 15px;
+}
+.looknook_body .wrapper .sliders-container .infoblock-2 .details-container .info-button-container {
+  padding-top: 18px;
+}
+.looknook_body .wrapper .sliders-container .infoblock-2 .details-container .info-button-container button {
+  font-size: 16px;
+  font-weight: normal;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  padding: 6px 9px;
+}
+.looknook_body .wrapper .carousel-container {
+  background: #FFFFFF;
+}
+.looknook_body .wrapper .carousel-container .slideshow img {
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.looknook_body .wrapper .carousel-container .slideshow img:first-child {
+  position: static;
+  z-index: 100;
+}
+.looknook_body .wrapper .information-container {
+  color: #000000;
+  height: max-content;
+  background: #F2F5EE;
+}
+.looknook_body .wrapper .information-container .infoblock {
+  vertical-align: top;
+  text-align: center;
+  width: 30%;
+  margin: 13px;
+  display: inline-block;
+}
+.looknook_body .wrapper .information-container .infoblock h1 {
+  margin-top: 0px;
+  font-size: 26px;
+}
+.looknook_body .wrapper .information-container .infoblock p {
+  padding: 0px 20px;
+}
+.looknook_body .wrapper .information-container .separator {
+  text-align: center;
+  width: 100%;
+  display: none;
+  padding: 0px 0px 20px 0px;
+}
+.looknook_body .wrapper .information-container .separator span {
+  display: inline-block;
+  background: #9F0049;
+  height: 5px;
+  width: 12%;
+}
+.looknook_body .wrapper .information-container .duplicate-infoblock-2 {
+  background: #F2F5EE;
+  top: 10%;
+  height: max-content;
+  display: none;
+  padding: 20px 60px;
+  margin-bottom: 20px;
+}
+.looknook_body .wrapper .information-container .duplicate-infoblock-2 .details-container .block-1 {
+  letter-spacing: 0.32em;
+  font-size: 26px;
+  padding-bottom: 5px;
+}
+.looknook_body .wrapper .information-container .duplicate-infoblock-2 .details-container .middle-block {
+  font-size: 16px;
+}
+.looknook_body .wrapper .information-container .duplicate-infoblock-2 .details-container .middle-block .customhr-line {
+  border-top: 4px solid #9F0049;
+  width: 42%;
+  margin: 0.5em 0;
+}
+.looknook_body .wrapper .information-container .duplicate-infoblock-2 .details-container .middle-block span {
+  padding: 0px 12px;
+}
+.looknook_body .wrapper .information-container .duplicate-infoblock-2 .details-container .block-2 {
+  letter-spacing: 0.23em;
+  font-size: 22px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.looknook_body .wrapper .information-container .duplicate-infoblock-2 .details-container .info-button-container {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 17px;
+}
+.looknook_body .wrapper .information-container .duplicate-infoblock-2 .details-container .info-button-container button {
+  font-size: 19px;
+  font-weight: normal;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  padding: 16px 45px;
+}
+.looknook_body .wrapper .subscriber-box {
+  height: 70px;
+  background: #000000;
+  display: flex;
+  align-items: center;
+}
+.looknook_body .wrapper .subscriber-box .box-left {
+  text-align: center;
+  width: 45%;
+  color: #FFFFFF;
+  font-size: 19px;
+}
+.looknook_body .wrapper .subscriber-box .box-middle {
+  width: 30%;
+  text-align: center;
+}
+.looknook_body .wrapper .subscriber-box .box-middle .email-input {
+  font-size: 12px;
+  padding: 8px 7px;
+  background: #606060;
+  color: white;
+  width: 53%;
+}
+.looknook_body .wrapper .subscriber-box .box-middle input.email-input::placeholder {
+  color: #FFFFFF;
+}
+.looknook_body .wrapper .subscriber-box .box-middle .subscribe-button {
+  padding: 4px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 23px;
+}
+.looknook_body .wrapper .subscriber-box .box-right {
+  width: 25%;
+  text-align: center;
+}
+.looknook_body .wrapper .subscriber-box .box-right .follow-text {
+  width: 50%;
+  text-align: right;
+  color: #FFFFFF;
+  font-size: 18px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.looknook_body .wrapper .subscriber-box .box-right .subscribe-social-icons {
+  text-align: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+.looknook_body .wrapper .subscriber-box .box-right .subscribe-social-icons .social-icon-link {
+  display: inline-block;
+  background: url("../img/social_icon_small.png");
+  width: 24px;
+  height: 24px;
+}
+.looknook_body .wrapper .subscriber-box .box-right .subscribe-social-icons .icon-facebook {
+  background-position: 0px -40px;
+}
+.looknook_body .wrapper .subscriber-box .box-right .subscribe-social-icons .icon-pinterest {
+  background-position: 24px -40px;
+}
+.looknook_body .wrapper .subscriber-box .box-right .subscribe-social-icons .icon-twitter {
+  background-position: 46px -40px;
+}
+.looknook_body .wrapper .getting-started {
+  background: #FFFFFF;
+  width: 100%;
+}
+.looknook_body .wrapper .getting-started .get-started-header {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+}
+.looknook_body .wrapper .getting-started .get-started-header h2 {
+  margin: 0;
+  color: #9F0049;
+  letter-spacing: 3px;
+  padding: 0 12px;
+  font-size: 21px;
+}
+.looknook_body .wrapper .getting-started .get-started-header .customhr-line {
+  border-top: 4px solid #9F0049;
+  width: 34%;
+}
+.looknook_body .wrapper .getting-started .main-content {
+  display: flex;
+  align-items: center;
+  padding-bottom: 6%;
+}
+.looknook_body .wrapper .getting-started .content-block {
+  width: 50%;
+  text-align: center;
+}
+.looknook_body .wrapper .getting-started .content-block img {
+  border: 1px solid #AFAFAF;
+}
+.looknook_body .wrapper .getting-started .content-block p.text-content {
+  padding: 25px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.5;
+  position: relative;
+}
+.looknook_body .wrapper .getting-started .content-block p.text-content .entypo-heart {
+  font-family: "entypo", sans-serif;
+  color: #9F0049;
+  font-size: 25px;
+  padding-right: 3px;
+}
+.looknook_body .wrapper .getting-started .content-block p.text-content .background-text {
+  position: absolute;
+  top: -24%;
+  left: 33%;
+  opacity: 0.2;
+  font-size: 155px;
+  z-index: 0;
+  color: #9F0049;
+}
+.looknook_body .wrapper .getting-started .content-block .left-text {
+  width: 55%;
+}
+.looknook_body .wrapper .getting-started .content-block .right-text {
+  width: 40%;
+}
+.looknook_body .wrapper .getting-started .content-block .button-container button {
+  font-size: 18px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  padding: 6px 9px;
+  position: relative;
+}
+.looknook_body .wrapper .footer {
+  height: 234px;
+  background: #000000;
+}
+.looknook_body .wrapper .footer .logo-footer {
+  width: 5%;
+  text-align: center;
+  position: relative;
+}
+.looknook_body .wrapper .footer span.logo {
+  position: absolute;
+  bottom: -40px;
+}
+.looknook_body .wrapper .footer .menu-footer {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 6%;
+  box-sizing: border-box;
+}
+.looknook_body .wrapper .footer .menu-footer .menu {
+  box-sizing: border-box;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.looknook_body .wrapper .footer .menu-footer .menu .menu-ul {
+  display: table-row;
+  width: 100%;
+}
+.looknook_body .wrapper .footer .menu-footer .menu .menu-ul .menu-li {
+  display: table-cell;
+  text-align: center;
+  width: 20%;
+  font-size: 19px;
+}
+.looknook_body .wrapper .footer .menu-footer .menu .menu-ul .menu-li .menu-item {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.looknook_body .wrapper .footer .menu-footer .menu .up-arrow {
+  background: url(../img/glyphicons-halflings-white.png);
+  background-position: -263px -73px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.looknook_body .wrapper .footer .callus-footer {
+  width: 40%;
+  text-align: right;
+  margin: 15px auto;
+}
+.looknook_body .wrapper .footer .callus-footer .text-part {
+  font-size: 17px;
+  font-weight: bold;
+}
+.looknook_body .wrapper .footer .callus-footer .text-part span {
+  width: 100%;
+  display: inline-block;
+}
+.looknook_body .wrapper .footer .callus-footer .text-part .line-1 {
+  color: #9F0049;
+}
+.looknook_body .wrapper .footer .callus-footer .text-part .line-2 {
+  color: #FFFFFF;
+}
+.looknook_body .wrapper .footer .callus-footer .icon-part {
+  color: #9F0049;
+  float: left;
+  font-size: 35px;
+  padding-left: 15px;
+}
+.looknook_body .wrapper .footer .bottom-block {
+  color: #FFFFFF;
+}
+.looknook_body .wrapper .footer .bottom-block * {
+  box-sizing: border-box;
+}
+.looknook_body .wrapper .footer .bottom-block .designer-info {
+  width: 40%;
+  padding: 0 0 0 9.1%;
+}
+.looknook_body .wrapper .footer .bottom-block .designer-info span {
+  width: 100%;
+  display: inline-block;
+}
+.looknook_body .wrapper .footer .bottom-block .designer-info .designer-head {
+  font-size: 19px;
+  font-weight: bold;
+}
+.looknook_body .wrapper .footer .bottom-block .designer-info .designer-readmore a.readmore-link {
+  color: #9F0049;
+  font-weight: bold;
+  text-decoration: none;
+}
+.looknook_body .wrapper .footer .bottom-block .recent-boards {
+  width: 50%;
+}
+.looknook_body .wrapper .footer .bottom-block .recent-boards .recent-head {
+  font-weight: bold;
+}
+.looknook_body .wrapper .footer .bottom-block .recent-boards span {
+  width: 100%;
+  display: inline-block;
+}
+.looknook_body .wrapper .footer .bottom-block .recent-boards .boards {
+  padding-top: 7px;
+}
+.looknook_body .wrapper .footer .bottom-block .recent-boards .boards img {
+  height: 70px;
+  padding-right: 4px;
+}
+.looknook_body .wrapper .rights-reserved {
+  display: flex;
+  height: 55px;
+  margin-top: 10px;
+}
+.looknook_body .wrapper .rights-reserved .copyright {
+  color: #FFFFFF;
+  font-size: 14px;
+  padding-right: 15px;
+}
+.looknook_body .wrapper .rights-reserved .subscribe-social-icons {
+  text-align: right;
+  box-sizing: border-box;
+}
+.looknook_body .wrapper .rights-reserved .subscribe-social-icons .social-icon-link {
+  display: inline-block;
+  background: url("../img/social_icon_small.png");
+  width: 24px;
+  height: 24px;
+}
+.looknook_body .wrapper .rights-reserved .subscribe-social-icons .icon-facebook {
+  background-position: 0px -40px;
+}
+.looknook_body .wrapper .rights-reserved .subscribe-social-icons .icon-pinterest {
+  background-position: 24px -40px;
+}
+.looknook_body .wrapper .rights-reserved .subscribe-social-icons .icon-twitter {
+  background-position: 46px -40px;
+}
+
+/*Add Media Queries*/
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  .looknook_body .wrapper {
+    margin: 0px auto;
+  }
+  .looknook_body .wrapper .header-part {
+    height: 77px;
+  }
+  .looknook_body .wrapper .header-part .head-left {
+    height: 77px;
+  }
+  .looknook_body .wrapper .header-part .head-left .header-social-icons {
+    display: none;
+  }
+  .looknook_body .wrapper .header-part .head-top .head-logo {
+    height: 77px;
+  }
+  .looknook_body .wrapper .header-part .head-top .head-logo .main-logo {
+    top: 35%;
+    left: 25%;
+  }
+  .looknook_body .wrapper .header-part .head-top .head-logo .main-logo img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  .looknook_body .wrapper .header-part .head-right .search-bar, .looknook_body .wrapper .header-part .head-right .quick-links {
+    display: none;
+  }
+  .looknook_body .wrapper #header .head-right .menu-icon {
+    display: block;
+  }
+  .looknook_body .wrapper #header .main-menu {
+    display: none;
+  }
+  .looknook_body .wrapper #header .infoblock-1 .block-part {
+    height: 33px;
+  }
+  .looknook_body .wrapper #header .infoblock-1 .block-part .menu-ul .menu-li {
+    line-height: 33px;
+    font-size: 12px;
+  }
+  .looknook_body .wrapper .sliders-container .cycle-slideshow img {
+    min-height: 225px;
+  }
+  .looknook_body .wrapper .sliders-container .divider {
+    height: 3px;
+  }
+  .looknook_body .wrapper .sliders-container .slider-button {
+    left: 5%;
+  }
+  .looknook_body .wrapper .sliders-container .slider-button .slider-button-container button {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+  .looknook_body .wrapper .sliders-container .cycle-pager {
+    display: none;
+  }
+  .looknook_body .wrapper .sliders-container .infoblock-2 {
+    display: none;
+  }
+  .looknook_body .wrapper .carousel-container .slideshow img {
+    min-height: 40px;
+  }
+  .looknook_body .wrapper .information-container {
+    background: #FFFFFF;
+  }
+  .looknook_body .wrapper .information-container .infoblock {
+    width: auto;
+    margin: 0px 10px;
+    padding-bottom: 20px;
+  }
+  .looknook_body .wrapper .information-container .infoblock h1 {
+    font-size: 28px;
+    margin-bottom: 0px;
+  }
+  .looknook_body .wrapper .information-container .infoblock p {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .looknook_body .wrapper .information-container .separator {
+    display: inline-block;
+  }
+  .looknook_body .wrapper .information-container .duplicate-infoblock-2 {
+    display: block;
+  }
+  .looknook_body .wrapper .subscriber-box {
+    height: max-content;
+    display: inline-block;
+    float: left;
+  }
+  .looknook_body .wrapper .subscriber-box .box-middle {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .looknook_body .wrapper .subscriber-box .box-middle .email-input {
+    font-size: 16px;
+    padding: 13px 10px;
+  }
+  .looknook_body .wrapper .subscriber-box .box-middle .subscribe-button {
+    margin-left: 20px;
+    padding: 7px 14px;
+    font-size: 16px;
+  }
+  .looknook_body .wrapper .subscriber-box .box-left {
+    width: 100%;
+    padding: 20px 0px;
+    font-size: 17px;
+  }
+  .looknook_body .wrapper .subscriber-box .box-right {
+    display: none;
+  }
+  .looknook_body .wrapper .getting-started .get-started-header {
+    margin: 20px auto;
+  }
+  .looknook_body .wrapper .getting-started .get-started-header .customhr-line {
+    width: 17%;
+  }
+  .looknook_body .wrapper .getting-started .get-started-header h2 {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  .looknook_body .wrapper .getting-started .main-content {
+    display: inline-block;
+  }
+  .looknook_body .wrapper .getting-started .main-content .content-block {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .looknook_body .wrapper .getting-started .main-content .content-block p.text-content {
+    padding: 15px 25px;
+    font-size: 18px;
+  }
+  .looknook_body .wrapper .getting-started .main-content .content-block p.text-content .background-text {
+    top: -25%;
+    left: 35%;
+    font-size: 140px;
+  }
+  .looknook_body .wrapper .getting-started .main-content .content-block .left-text {
+    width: 70%;
+  }
+  .looknook_body .wrapper .getting-started .main-content .content-block .right-text {
+    width: 55%;
+  }
+  .looknook_body .wrapper .getting-started .main-content .content-block img {
+    height: 190px;
+  }
+  .looknook_body .wrapper .footer {
+    height: max-content;
+    float: left;
+  }
+  .looknook_body .wrapper .footer .menu-footer {
+    width: 100%;
+  }
+  .looknook_body .wrapper .footer .menu-footer .menu .menu-ul {
+    width: 90%;
+  }
+  .looknook_body .wrapper .footer .menu-footer .menu .up-arrow {
+    display: none;
+  }
+  .looknook_body .wrapper .footer .callus-footer {
+    display: none;
+  }
+  .looknook_body .wrapper .footer .bottom-block {
+    display: none;
+  }
+  .looknook_body .wrapper .rights-reserved {
+    display: none;
+  }
+
+  .paddingright {
+    padding-right: 12%;
+  }
+
+  .paddingleft {
+    padding-left: 12%;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */

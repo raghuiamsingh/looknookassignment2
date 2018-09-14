@@ -1,0 +1,155 @@
+.footer {
+    height: 234px;
+    background: $primary-color;
+    
+    .logo-footer {
+        width: 5%;
+        text-align: center;
+        position: relative;
+    }
+    
+    span.logo {
+        position: absolute;
+        bottom: -40px;
+    }
+    
+    .menu-footer {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding-left: 6%;
+        box-sizing: border-box;
+        .menu {
+            box-sizing: border-box;
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            .menu-ul {
+                display: table-row;
+                width: 100%;
+                .menu-li {
+                    display: table-cell;
+                    text-align: center;
+                    width: 20%;
+                    @include setfontsize(19px);
+                    .menu-item {
+                        text-decoration: none;
+                        color: $secondary-color;
+                    }
+                }
+            }
+                                
+            .up-arrow {
+                @extend %menu-down-arrow;
+                background: url(../img/glyphicons-halflings-white.png);
+                @include setbackgroundposition(-263px -73px);
+                @include transform(rotate(-90deg));
+            }
+        }
+    }
+    
+    .callus-footer {
+        width: 40%;
+        text-align: right;
+        margin: 15px auto;
+        .text-part {
+            font-size: 17px;
+            font-weight: bold;
+            span {
+                width: 100%;
+                display: inline-block;
+            }
+            .line-1 {
+                color: $theme-color;
+            }
+            .line-2 {
+                color: $secondary-color;
+            }
+        }
+        .icon-part {
+            color: $theme-color;
+            float: left;
+            font-size: 35px;
+            padding-left: 15px;
+        }
+    }
+    
+    .bottom-block {
+        color: $secondary-color;
+        * {
+            box-sizing: border-box;
+        }
+        .designer-info {
+            width: 40%;
+            padding: 0 0 0 9.1%;
+            span {
+                width: 100%;
+                display: inline-block;
+            }
+            
+            .designer-head {
+                @include setfontsize(19px);
+                font-weight: bold;
+            }
+            
+            .designer-readmore {
+                a.readmore-link {
+                    color: $theme-color;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+        }
+        
+        .recent-boards {
+            width: 50%;
+            .recent-head {
+                font-weight: bold;
+            }
+            span {
+                width: 100%;
+                display: inline-block;
+            }
+            .boards {
+                padding-top: 7px;
+                img {
+                    height: 70px;
+                    padding-right: 4px;
+                }
+            }
+        }
+    }
+}
+
+.rights-reserved {
+    display: flex;
+    height: 55px;
+    margin-top: 10px;
+    .copyright {
+        color: $secondary-color;
+        @include setfontsize(14px);
+        padding-right: 15px;
+    }
+    .subscribe-social-icons {
+        text-align: right;
+        box-sizing: border-box;
+        .social-icon-link {
+            display: inline-block;
+            background: url("../img/social_icon_small.png");
+            width: 24px;
+            height: 24px;
+        }
+
+        .icon-facebook {
+            @include setbackgroundposition($facebook-position);
+        }
+
+        .icon-pinterest {
+            @include setbackgroundposition($pinterest-position);
+        }
+
+        .icon-twitter {
+            @include setbackgroundposition($twitter-position);
+        }
+    }
+}

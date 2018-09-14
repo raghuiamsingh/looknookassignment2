@@ -1,0 +1,14 @@
+.carousel-container {
+    background: $secondary-color;
+    .slideshow {
+        img {
+            padding: 10px 10px;
+            cursor: pointer;
+        }
+
+        img:first-child {
+            position: static;
+            z-index: 100;
+        }
+    }
+}

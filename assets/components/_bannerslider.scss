@@ -1,0 +1,129 @@
+.sliders-container {
+    .cycle-slideshow, .cycle-slideshow * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .cycle-slideshow {
+        min-width: 200px;
+        margin: 0px auto;
+        padding: 0;
+        position: relative;
+        background: url(http://malsup.github.com/images/spinner.gif) 50% 50% no-repeat;
+
+        img { 
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0;
+            display: block;
+            cursor: pointer;
+            min-height: 250px;
+            max-height: 360px;
+        }
+
+        img:first-child {
+            position: static;
+            z-index: 100;
+        }
+
+        .cycle-pager { 
+            text-align: center;
+            width: 100%;
+            z-index: 500;
+            position: absolute;
+            bottom: 0px;
+            overflow: hidden;
+        }
+        .cycle-pager span { 
+            font-size: 75px;
+            padding: 0px 15px;
+            width: 16px;
+            height: 16px; 
+            display: inline-block;
+            color: $cycle-color;
+            cursor: pointer; 
+        }
+        .cycle-pager span.cycle-pager-active { color: $cycle-color-active; }
+        .cycle-pager > * { cursor: pointer; }
+    }
+
+    .divider {
+        height: 7px;
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+    }
+
+    .slider-button {
+        position: absolute;
+        z-index: 501;
+        bottom: 0px;
+        left: 12%;
+        .slider-button-container {
+            button {
+                @extend %button-design;
+                @include setfontsize(17px);
+                padding: 10px 18px;
+                font-weight: normal;
+                @include setborderradius(7px 7px 0px 0px);
+            }
+        }
+    }
+
+    .infoblock-2 {
+        position: absolute;
+        z-index: 501;
+        width: 35%;
+        left: 60%;
+        background: $background-opacity;
+        top: 10%;
+        padding: 17px;
+        height: max-content;
+        .details-container {
+            .block-1 {
+                @extend %block-text;
+                letter-spacing: 0.34em;
+                @include setfontsize(25px);
+                padding-bottom: 5px;
+            }
+            .middle-block {
+                @extend %block-text;
+                @include setfontsize(18px);
+
+                .customhr-line {
+                    border-top: 4px solid $theme-color;
+                    width: 42%;
+                    margin: 0.5em 0;
+                }
+
+                span {
+                    padding: 0px 9px;
+                }
+            }
+            .block-2 {
+                @extend %block-text;
+                letter-spacing: 0.26em;
+                @include setfontsize(21px);
+                padding-bottom: 10px;
+                padding-top: 5px;
+            }
+            .details-text {
+                @include setfontsize(15px);
+            }
+            .info-button-container {
+                padding-top: 18px;
+                button {
+                    @extend %button-design;
+                    @include setfontsize(16px);
+                    font-weight: normal;
+                    @include setborderradius(7px);
+                    padding: 6px 9px;
+                }
+            } 
+        }
+    }
+}

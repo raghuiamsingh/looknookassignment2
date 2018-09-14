@@ -1,0 +1,74 @@
+.subscriber-box {
+    height: 70px;
+    background: $primary-color;
+    display: flex;
+    align-items: center;
+    .box-left {
+        text-align: center;
+        width: 45%;
+        color: $secondary-color;
+        @include setfontsize(19px);
+    }
+    
+    .box-middle {
+        width: 30%;
+        text-align: center;
+        .email-input {
+            font-size: 12px;
+            padding: 8px 7px;
+            background: $field-background;
+            color: white;
+            width: 53%;
+        }
+        
+        input.email-input::placeholder {
+            color: $secondary-color;
+        }
+
+        .subscribe-button {
+            @extend %button-design;
+            padding: 4px 14px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-left: 23px;
+        }
+    }
+    
+    .box-right {
+        width: 25%;
+        text-align: center;
+        
+        .follow-text {
+            width: 50%;
+            text-align: right;
+            color: $secondary-color;
+            @include setfontsize(18px);
+            padding-right: 10px;
+            box-sizing: border-box;
+        }
+        
+        .subscribe-social-icons {
+            text-align: left;
+            width: 50%;
+            box-sizing: border-box;
+            .social-icon-link {
+                display: inline-block;
+                background: url("../img/social_icon_small.png");
+                width: 24px;
+                height: 24px;
+            }
+
+            .icon-facebook {
+                @include setbackgroundposition($facebook-position);
+            }
+
+            .icon-pinterest {
+                @include setbackgroundposition($pinterest-position);
+            }
+
+            .icon-twitter {
+                @include setbackgroundposition($twitter-position);
+            }
+        }
+    }
+}
