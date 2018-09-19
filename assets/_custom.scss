@@ -1,28 +1,12 @@
 .looknook_body {
     background: url("../img/footerbg.png");
-    .wrapper {
-        max-width: 1200px;
-        margin: 37px 87px;
-        
-        /*Add Main Header CSS Properties*/
-        @import "components/header";
-        
-        /*Add Banners Slider CSS Properties*/
-        @import "components/bannerslider";
-                
-        /*Add Carousel CSS Properties*/
-        @import "components/carousel";
-        
-        /*Add Information Block 1 CSS Properties*/
-        @import "components/infoblock1"; 
-        
-        /*Add Subscriber Box CSS Properties*/
-        @import "components/subscriberbox";
-        
-        /*Add Getting Started Block CSS Properties*/
-        @import "components/gettingstarted";
-        
-        /*Add Footer Block CSS Properties*/
-        @import "components/footer";
-    }
 }
+
+.container {
+    max-width: 1109px;
+    margin: 37px auto;
+    box-shadow: 0 0 20px 4px rgba(0,0,0,0.5);
+}
+
+/*Add Components CSS Properties*/
+@import "components/index";

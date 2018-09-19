@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
-
+<html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,6 +11,7 @@
         <link rel="shortcut icon" type="image/png" href="icon.png"/>
 
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="http://weloveiconfonts.com/api/?family=entypo" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">  
         <link rel="stylesheet" href="css/custom.css">  
@@ -23,41 +23,37 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="wrapper">
+        <div class="container">
             <div class="page">
-                <div id="header">
+                <header id="header">
 
-                    <div class="header-part">
-                        <div class="head-top">
+                    <div class="main-header">
+                        <div class="header-wrapper">
                             <div class="head-left floatleft">
-                                <div class="header-social-icons">
-                                    <a title="Facebook" href="javascript:void(0);" class="social-icon-link">
-                                        <span class="social-icon-holder icon-facebook"></span>
-                                    </a>
-                                    <a title="Pinterest" href="javascript:void(0);" class="social-icon-link">
-                                        <span class="social-icon-holder icon-pinterest"></span>
-                                    </a>
-                                    <a title="Twitter" href="javascript:void(0);" class="social-icon-link">
-                                        <span class="social-icon-holder icon-twitter"></span>
-                                    </a>
+                                <div class="social-icons-holder">
+                                    <a title="Facebook" href="#" class="social-icon-link icon-facebook"></a>
+                                    <a title="Pinterest" href="#" class="social-icon-link icon-pinterest"></a>
+                                    <a title="Twitter" href="#" class="social-icon-link icon-twitter"></a>
                                 </div>
                             </div>
                             <div class="head-logo floatleft">
-                                <span class="main-logo">
-                                    <img src="img/logo_perks_white.png" alt="Main Logo">
-                                </span>
+                                <div class="main-logo">
+                                    <a href="" class="display-ib">
+                                        <img src="img/logo_perks_white.png" alt="Main Logo"/>
+                                    </a>
+                                </div>
                             </div>
                             <div class="head-right floatleft">
-                                <div class="menu-icon">
-                                    <span id="menu-toggle" class="entypo-menu"></span>
+                                <div id="menu-toggle" class="mobile-menu-icon-wrapper">
+                                    <span class="entypo-menu"></span>
                                 </div>
-                                <div class="search-bar floatright">
-                                    <span class="search-field-container">
-                                        <input type="text" name="search-field" class="search-input" placeholder="Search" />
-                                    </span>
-                                    <span class="search-button-container">
-                                        <button class="search-button" type="button">GO</button>
-                                    </span>
+                                <div class="header-search floatright display-ib">
+                                    <div class="display-ib">
+                                        <input type="text" name="search-field" class="customized-input" placeholder="Search" />
+                                    </div>
+                                    <div class="display-ib">
+                                        <button class="search-button">GO</button>
+                                    </div>
                                 </div>
                                 <div class="quick-links floatright">
                                     <div class="display-ib cursor-pointer">
@@ -73,329 +69,315 @@
                             </div>
                         </div>
                     </div>
-                    <div id="mobile-dashboard">
+                    <div id="mobile-dashboard" class="mobile-dashboard">
                         <div class="dashboard-header">My Dashboard</div>
                         <div class="dashboard-container">
-                            <span class="dashboard-row">
+                            <div class="dashboard-row">
                                 <span class="dashboard-cell">Login/Signup</span>
                                 <span class="dashboard-cell"><span class="cart-icon"></span>My Cart</span>
-                            </span>
-                            <span class="dashboard-row">
+                            </div>
+                            <div class="dashboard-row">
                                 <span class="dashboard-cell">Rooms</span>
                                 <span class="dashboard-cell">Styles</span>
-                            </span>
-                            <span class="dashboard-row">
+                            </div>
+                            <div class="dashboard-row">
                                 <span class="dashboard-cell">Pro</span>
                                 <span class="dashboard-cell">Blog</span>
-                            </span>
+                            </div>
                         </div>
                         <div class="dashboard-search">
-                            <span class="search-field-container">
-                                <input type="text" name="search-field" class="search-input" placeholder="Search" />
-                            </span>
-                            <span class="search-button-container">
-                                <button class="search-button" type="button">GO</button>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="main-menu clearfloat">
-                        <div class="menu-part floatleft menupadding-right">
-                            <ul class="menu-ul">
-                                <li class="menu-li">
-                                    <a class="menu-item" href="javascript:void(0);">Rooms</a>
-                                    <span class="down-arrow"></span>
-                                </li>
-                                <li class="menu-li">
-                                    <a class="menu-item" href="javascript:void(0);">Styles</a>
-                                    <span class="down-arrow"></span>
-                                </li>
-                                <li class="menu-li">
-                                    <a class="menu-item" href="javascript:void(0);">Products</a>
-                                    <span class="down-arrow"></span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="menu-part floatright menupadding-left">
-                            <ul class="menu-ul">
-                                <li class="menu-li">
-                                    <a class="menu-item" href="javascript:void(0);">Get The Look</a>
-                                </li>
-                                <li class="menu-li">
-                                    <a class="menu-item" href="javascript:void(0);">Pro</a>
-                                </li>
-                                <li class="menu-li">
-                                    <a class="menu-item" href="javascript:void(0);">Blog</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="infoblock-1 floatleft">
-                        <div class="block-part floatleft paddingright">
-                            <ul class="menu-ul">
-                                <li class="menu-li right-align">
-                                    Create a home you will love.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="block-part floatright paddingleft">
-                            <ul class="menu-ul">
-                                <li class="menu-li left-align">
-                                    Get help where you need it.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="sliders-container">
-                    <div class="cycle-slideshow clearfloat" data-cycle-fx=fadeout data-cycle-timeout=1000 data-cycle-pause-on-hover="true">
-                        <img src="img/banners/1.jpg" alt="Banner 1">
-                        <img src="img/banners/2.jpg" alt="Banner 2">
-                        <img src="img/banners/3.png" alt="Banner 3">
-                        <img src="img/banners/4.jpg" alt="Banner 4">
-                        <img src="img/banners/5.jpg" alt="Banner 5">
-                        <div class="cycle-pager"></div>
-                        <div class="slider-button">
-                            <span class="slider-button-container">
-                                <button type="button">Shop This Inspiration ></button>
-                            </span>
-                        </div>
-                        
-                        <div class="infoblock-2 floatleft">
-                            <div class="details-container floatleft">
-                                <span class="block-1 floatleft">
-                                    Interior Design
-                                </span>
-                                <span class="middle-block">
-                                    <hr class="floatleft customhr-line">
-                                    <span class="floatleft">
-                                        For
-                                    </span>
-                                    <hr class="floatright customhr-line">
-                                </span>
-                                <span class="block-2 floatleft">
-                                    Internet Generation
-                                </span>
-                                <span class="floatleft details-text">Get inspired from our designer collections or shop directly from top brands and exclusive vendors all hand picked by Pros!</span>
-                                <span class="info-button-container floatright">
-                                    <button type="button">Let's Get Started ></button>
-                                </span>
+                            <div class="display-ib">
+                                <input type="text" name="search-field" class="customized-input" placeholder="Search" />
+                            </div>
+                            <div class="display-ib">
+                                <button class="search-button">GO</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="divider">
-                        <img src="img/ping_bottom.PNG" alt="divider">
+                    <div class="main-menu clearfloat">
+                        <nav class="menu-part floatleft menupadding-right">
+                            <ul class="menu-group">
+                                <li class="menu-item">
+                                    <a href="#">Rooms</a>
+                                    <span class="down-arrow"></span>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Styles</a>
+                                    <span class="down-arrow"></span>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Products</a>
+                                    <span class="down-arrow"></span>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="menu-part floatright menupadding-left">
+                            <ul class="menu-group">
+                                <li class="menu-item">
+                                    <a href="#">Get The Look</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Pro</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Blog</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="slider-top-content floatleft">
+                        <div class="block-part floatleft paddingright right-align">
+                            Create a home you will love.
+                        </div>
+                        <div class="block-part floatright paddingleft left-align">
+                            Get help where you need it.
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="hero-slider-container">
+                    <div class="cycle-slideshow clearfloat" data-cycle-fx=fadeout data-cycle-timeout=1000 data-cycle-pause-on-hover="true">
+                        <img src="img/banners/1.jpg" alt="Banner 1"/>
+                        <img src="img/banners/2.jpg" alt="Banner 2"/>
+                        <img src="img/banners/3.png" alt="Banner 3"/>
+                        <img src="img/banners/4.jpg" alt="Banner 4"/>
+                        <img src="img/banners/5.jpg" alt="Banner 5"/>
+                        <div class="cycle-pager"></div>
+                        <div class="slider-button">
+                            <div class="slider-button-container">
+                                <button>Shop This Inspiration &gt;</button>
+                            </div>
+                        </div>
+                        
+                        <div class="slider-right-content floatleft">
+                            <div class="content-wrapper floatleft">
+                                <span class="top-heading floatleft">
+                                    Interior Design
+                                </span>
+                                <span class="text-with-separator display-ib">
+                                    For
+                                </span>
+                                <span class="bottom-heading floatleft">
+                                    Internet Generation
+                                </span>
+                                <span class="floatleft text-content-wrapper">Get inspired from our designer collections or shop directly from top brands and exclusive vendors all hand picked by Pros!</span>
+                                <div class="right-content-button-container floatright">
+                                    <button>Let's Get Started &gt;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page-divider">
+                        <img src="img/ping_bottom.PNG" alt="divider"/>
                     </div>
                 </div>
 
-                <div class="carousel-container clearfloat">
-                    <div class="slideshow" data-cycle-fx=carousel data-cycle-speed="900" data-cycle-timeout=3000 data-cycle-carousel-visible=5 data-cycle-carousel-fluid=true>
-                        <img src="img/slides/1.jpg" alt="Slide 1">
-                        <img src="img/slides/2.jpg" alt="Slide 2">
-                        <img src="img/slides/3.jpg" alt="Slide 3">
-                        <img src="img/slides/4.jpg" alt="Slide 4">
-                        <img src="img/slides/5.jpg" alt="Slide 5">
-                        <img src="img/slides/6.jpeg" alt="Slide 6">
-                        <img src="img/slides/7.jpg" alt="Slide 7">
-                        <img src="img/slides/8.png" alt="Slide 8">
-                        <img src="img/slides/10.png" alt="Slide 9">
-                        <img src="img/slides/11.png" alt="Slide 10">
-                        <img src="img/slides/a.jpeg" alt="Slide 11">
-                        <img src="img/slides/b.jpg" alt="Slide 12">
-                        <img src="img/slides/c.jpg" alt="Slide 13">
-                        <img src="img/slides/d.jpg" alt="Slide 14">
+                <div class="carousel-wrapper clearfloat">
+                    <div class="slideshow" 
+                        data-cycle-fx=carousel 
+                        data-cycle-speed="900" 
+                        data-cycle-timeout=3000 
+                        data-cycle-carousel-visible=5 
+                        data-cycle-carousel-fluid=true 
+                        data-cycle-next="#next-slide" 
+                        data-cycle-prev="#prev-slide"
+                    >
+                        <img src="img/slides/1.jpg" alt="Slide 1"/>
+                        <img src="img/slides/2.jpg" alt="Slide 2"/>
+                        <img src="img/slides/3.jpg" alt="Slide 3"/>
+                        <img src="img/slides/4.jpg" alt="Slide 4"/>
+                        <img src="img/slides/5.jpg" alt="Slide 5"/>
+                        <img src="img/slides/6.jpeg" alt="Slide 6"/>
+                        <img src="img/slides/7.jpg" alt="Slide 7"/>
+                        <img src="img/slides/8.png" alt="Slide 8"/>
+                        <img src="img/slides/10.png" alt="Slide 9"/>
+                        <img src="img/slides/11.png" alt="Slide 10"/>
+                        <img src="img/slides/a.jpeg" alt="Slide 11"/>
+                        <img src="img/slides/b.jpg" alt="Slide 12"/>
+                        <img src="img/slides/c.jpg" alt="Slide 13"/>
+                        <img src="img/slides/d.jpg" alt="Slide 14"/>
+                        <div class="carousel-nav floatleft">
+                            <div class="btn-wrapper left-align floatleft">
+                                <a href="#" class="nav-btn previous-btn round" id="prev-slide">&#8249;</a>
+                            </div>
+                            <div class="btn-wrapper right-align floatright">
+                                <a href="#" class="nav-btn next-btn round" id="next-slide">&#8250;</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="information-container">
-                    <div class="duplicate-infoblock-2 floatleft">
-                        <div class="details-container floatleft">
-                            <span class="block-1 floatleft">
+                <div class="after-slider-wrapper">
+                    <div class="duplicate-slider-right-content floatleft">
+                        <div class="content-wrapper floatleft">
+                            <span class="top-heading floatleft">
                                 Interior Design
                             </span>
-                            <span class="middle-block">
-                                <hr class="floatleft customhr-line">
-                                <span class="floatleft">
-                                    For
-                                </span>
-                                <hr class="floatright customhr-line">
+                            <span class="text-with-separator">
+                                For
                             </span>
-                            <span class="block-2 floatleft">
+                            <span class="bottom-heading floatleft">
                                 Internet Generation
                             </span>
-                            <span class="floatleft center-align ">Get inspired from our designer collections or shop directly from top brands and exclusive vendors all hand picked by Pros!</span>
-                            <span class="info-button-container floatright">
-                                <button type="button">Let's Get Started ></button>
-                            </span>
+                            <span class="floatleft center-align">Get inspired from our designer collections or shop directly from top brands and exclusive vendors all hand picked by Pros!</span>
+                            <div class="right-content-button-container floatright">
+                                <button>Let's Get Started &gt;</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="separator">
-                        <span></span>
-                    </div>
-                    <div class="infoblock">
-                        <h1>Love your home</h1>
+                    <div class="separator"></div>
+                    <div class="slider-bottom-block">
+                        <h2>Love your home</h2>
                         <p>We empower you to showcase your personality through your home and achieve the pride that comes with loving where you live.</p>
                     </div>
-                    <div class="separator">
-                        <span></span>
-                    </div>
-                    <div class="infoblock">
-                        <h1>Shop hassle free</h1>
+                    <div class="separator"></div>
+                    <div class="slider-bottom-block">
+                        <h2>Shop hassle free</h2>
                         <p>Ordering across multiple vendors is stressful and complicated. Our FREE concierge order management service ensures your order meets your expectation.</p>
                     </div>
-                    <div class="separator">
-                        <span></span>
-                    </div>
-                    <div class="infoblock">
-                        <h1>Save a bundle</h1>
+                    <div class="separator"></div>
+                    <div class="slider-bottom-block">
+                        <h2>Save a bundle</h2>
                         <p>We strive to find your look for the lowest price. Our discounts are stacked with other available deals for even more savings. Enjoy the process with your budget.</p>
                     </div>
                 </div>
                 
                 <div class="subscriber-box">
-                    <div class="box-left floatleft">Enjoy featured looks, tips & inspiration from us!</div>
+                    <div class="box-left floatleft">Enjoy featured looks, tips &amp; inspiration from us!</div>
                     <div class="box-middle floatleft">
-                        <span class="email-field-container">
+                        <div class="email-field-container display-ib">
                             <input type="text" name="email-field" class="email-input" placeholder="email address" />
-                        </span>
-                        <span class="subscribe-button-container">
-                            <button class="subscribe-button" type="button">Sign Up</button>
-                        </span>
+                        </div>
+                        <div class="subscribe-button-container display-ib">
+                            <button class="subscribe-button">Sign Up</button>
+                        </div>
                     </div>
                     <div class="box-right floatleft">
                         <div class="follow-text floatleft">Follow us</div>
-                        <div class="subscribe-social-icons floatright">
-                            <a title="Facebook" href="javascript:void(0);" class="social-icon-link icon-facebook">
-                            </a>
-                            <a title="Pinterest" href="javascript:void(0);" class="social-icon-link icon-pinterest">
-                            </a>
-                            <a title="Twitter" href="javascript:void(0);" class="social-icon-link icon-twitter">
-                            </a>
+                        <div class="social-icons-holder floatright">
+                            <a title="Facebook" href="#" class="social-icon-link icon-facebook"></a>
+                            <a title="Pinterest" href="#" class="social-icon-link icon-pinterest"></a>
+                            <a title="Twitter" href="#" class="social-icon-link icon-twitter"></a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="getting-started floatleft">
                     <div class="get-started-header">
-                        <hr class="customhr-line">
-                        <h2>
-                            How to get started
-                        </h2>
-                        <hr class="customhr-line">
+                        <h1>How to get started</h1>
                     </div>
-                    <div class="main-content">
+                    <div class="get-started-main-content">
                         <div class="content-block">
                             <div class="content-with-image">
-                                <span class="image-content">
-                                    <img src="img/step1.jpg" alt="Image 1">
-                                </span>
+                                <div class="image-content">
+                                    <img src="img/step1.jpg" alt="Image 1"/>
+                                </div>
                                 <p class="text-content left-text">
                                     Share us your Pinterest boards, Houzz Ideabook, and links to other inspiration. Our designer will find products that fit your style.
-                                    <span class="background-text">1</span>
+                                    <span class="big-background-text">1</span>
                                 </p>
                             </div>
-                            <div class="button-container">
-                                <button type="button">Start Sharing ></button>
+                            <div class="get-started-button-container">
+                                <button>Start Sharing &gt;</button>
                             </div>
                         </div>
                         <div class="content-block">
                             <div class="content-with-image">
-                                <span class="image-content">
-                                    <img src="img/step2.jpg" alt="Image 2">
-                                </span>
+                                <div class="image-content">
+                                    <img src="img/step2.jpg" alt="Image 2"/>
+                                </div>
                                 <p class="text-content right-text">
                                     Browse our professionally curated collections and <span class="entypo-heart"></span>what you love. Our designers can help you!
-                                    <span class="background-text">2</span>
+                                    <span class="big-background-text">2</span>
                                 </p>
                             </div>
-                            <div class="button-container">
-                                <button type="button">Browse ></button>
+                            <div class="get-started-button-container">
+                                <button>Browse &gt;</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="footer clearfloat">
+                <footer class="footer clearfloat">
                     <div class="logo-footer floatleft">
-                        <span class="logo">
-                            <img src="img/logo_footer.png" alt="Footer Logo">
-                        </span>
-                    </div>
-                    <div class="menu-footer floatleft">
-                        <div class="menu floatleft">
-                            <ul class="menu-ul floatleft">
-                                <li class="menu-li">
-                                    <a class="menu-item" href="javascript:void(0);">About</a>
-                                    <span class="up-arrow"></span>
-                                </li>
-                                <li class="menu-li">
-                                    <a class="menu-item" href="javascript:void(0);">Contact</a>
-                                </li>
-                                <li class="menu-li">
-                                    <a class="menu-item" href="javascript:void(0);">Blog</a>
-                                </li>
-                                <li class="menu-li">
-                                    <a class="menu-item" href="javascript:void(0);">Terms</a>
-                                </li>
-                                <li class="menu-li">
-                                    <a class="menu-item" href="javascript:void(0);">Privacy</a>
-                                </li>
-                            </ul>
+                        <div class="logo display-ib">
+                            <a href="" class="display-ib">
+                                <img src="img/logo_footer.png" alt="Footer Logo"/>
+                            </a>
                         </div>
                     </div>
-                    <div class="callus-footer floatright">
+                    <div class="menu-footer floatleft">
+                        <nav class="menu floatleft">
+                            <ul class="menu-group floatleft">
+                                <li class="menu-item">
+                                    <a href="#">About</a>
+                                    <span class="up-arrow"></span>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Terms</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Privacy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="callus-wrapper floatright">
                         <span class="text-part floatleft">
                             <span class="line-1">Call us today to Customize</span>
                             <span class="line-2">1.877.960.5665</span>
                         </span>
-                        <span class="icon-part entypo-phone"></span>
+                        <a href="tel: 18779605665" class="display-ib icon-part">
+                            <span class="entypo-phone"></span>
+                        </a>
                     </div>
                     
-                    <div class="bottom-block clearfloat">
+                    <div class="content-with-recents clearfloat">
                         <div class="designer-info floatleft">
                             <span class="designer-head">Guest Designer | 81 Poppies</span>
                             <span class="designer-details">In an effort to stave the Summer heat, we've collaborated with Texas based clothing designer and creator of 81 Poppies, Michelle...</span>
-                            <span class="designer-readmore">
-                                <a class="readmore-link" href="javascript:void(0);">Read More From Blog</a>
-                            </span>
+                            <div class="designer-readmore">
+                                <a class="readmore-link" href="#">Read More From Blog</a>
+                            </div>
                         </div>
                         <div class="recent-boards floatright">
                             <span class="recent-head">Recent Boards</span>
-                            <span class="boards">
-                                <img src="img/footer_thm1.PNG" alt="Footer Theme 1">
-                                <img src="img/footer_thm2.PNG" alt="Footer Theme 2">
-                                <img src="img/footer_thm3.PNG" alt="Footer Theme 3">
-                                <img src="img/footer_thm4.PNG" alt="Footer Theme 4">
-                                <img src="img/footer_thm5.PNG" alt="Footer Theme 5">
-                            </span>
+                            <div class="boards">
+                                <a href="#" class="display-ib"><img src="img/footer_thm1.PNG" alt="Footer Theme 1"/></a>
+                                <a href="#" class="display-ib"><img src="img/footer_thm2.PNG" alt="Footer Theme 2"/></a>
+                                <a href="#" class="display-ib"><img src="img/footer_thm3.PNG" alt="Footer Theme 3"/></a>
+                                <a href="#" class="display-ib"><img src="img/footer_thm4.PNG" alt="Footer Theme 4"/></a>
+                                <a href="#" class="display-ib"><img src="img/footer_thm5.PNG" alt="Footer Theme 5"/></a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </footer>
                 
                 <div class="floatright rights-reserved">
                     <span class="copyright">&copy; 2018 LookNook | All Rights Reserved</span>
-                    <span class="subscribe-social-icons">
-                        <a title="Facebook" href="javascript:void(0);" class="social-icon-link icon-facebook">
-                        </a>
-                        <a title="Pinterest" href="javascript:void(0);" class="social-icon-link icon-pinterest">
-                        </a>
-                        <a title="Twitter" href="javascript:void(0);" class="social-icon-link icon-twitter">
-                        </a>
-                    </span>
+                    <div class="social-icons-holder">
+                        <a title="Facebook" href="#" class="social-icon-link icon-facebook"></a>
+                        <a title="Pinterest" href="#" class="social-icon-link icon-pinterest"></a>
+                        <a title="Twitter" href="#" class="social-icon-link icon-twitter"></a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <script src="js/vendor/modernizr-3.6.0.min.js" async></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous" async></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-        <script src="js/cycle2-plugin/jquery.cycle2.min.js" async></script>
-        <script src="js/cycle2-plugin/jquery.cycle2.carousel.min.js" async></script>
+        <script src="js/vendor/jquery-3.3.1.min.js"></script>
+        <script src="js/cycle2-plugin/jquery.cycle2.min.js"></script>
+        <script src="js/cycle2-plugin/jquery.cycle2.carousel.min.js"></script>
         <script src="js/plugins.js" async></script>
         <script src="js/main.js" async></script>
     </body>
-
 </html>

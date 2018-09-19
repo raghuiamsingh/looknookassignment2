@@ -1,8 +1,10 @@
 $('.slideshow').cycle({
-    speed: 600,
-    manualSpeed: 100
+        speed: 600,
+        manualSpeed: 100
 });
 
-$('#menu-toggle').click(function(){
-    $('#mobile-dashboard').slideToggle();
+$(document).ready(function() {
+    $('#menu-toggle').click(function(){
+        $('#mobile-dashboard').slideToggle();
+    });    
 });

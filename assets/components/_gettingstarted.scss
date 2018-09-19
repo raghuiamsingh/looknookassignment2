@@ -1,78 +1,67 @@
 .getting-started {
     background: $secondary-color;
     width: 100%;
-    .get-started-header {
-        @extend %transform-uppercase;
-        width: 90%;
-        margin: 30px auto;
-        display: flex;
-        align-items: center;
-        h2 {
-            margin: 0;
+}
+
+.get-started-header {
+    @extend %transform-uppercase;
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    h1 {
+        margin: 0;
+        color: $theme-color;
+        letter-spacing: 3px;
+        padding: 0 12px;
+        @include setfontsize(21px);
+    }
+    &:before, &:after {
+        content: '';
+        border-top: 4px solid $theme-color;
+        width: 34%;
+    }
+}
+
+.get-started-main-content {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 6%;
+}
+
+.content-block {
+    width: 50%;
+    text-align: center;
+    img {
+        border: 1px solid $image-border-color;
+    }
+
+    p.text-content {
+        padding: 25px;
+        margin: 0 auto;
+        @include setfontsize(17px);
+        line-height: 1.5;
+        position: relative;
+        .entypo-heart {
+            font-family: 'entypo', sans-serif;
             color: $theme-color;
-            letter-spacing: 3px;
-            padding: 0 12px;
-            font-size: 21px;
-        }
-        .customhr-line {
-            border-top: 4px solid $theme-color;
-            width: 34%;
+            @include setfontsize(25px);
+            padding-right: 3px;
         }
     }
-    
-    .main-content {
-        display: flex;
-        align-items: center;
-        padding-bottom: 6%;
+
+    .left-text {
+        width: 56%;
     }
-    
-    .content-block {
-        width: 50%;
-        text-align: center;
-        img {
-            border: 1px solid #AFAFAF;
-        }
-        
-        p.text-content {
-            padding: 25px;
-            margin: 0 auto;
-            @include setfontsize(17px);
-            line-height: 1.5;
+
+    .right-text {
+        width:45%;
+    }
+
+    .get-started-button-container {
+        button {
+            @include setbuttondesign(6px 9px, 18px, 7px, '');
             position: relative;
-            .entypo-heart {
-                font-family: 'entypo', sans-serif;
-                color: $theme-color;
-                font-size: 25px;
-                padding-right: 3px;
-            }
-            
-            .background-text {
-                position: absolute;
-                top: -24%;
-                left: 33%;
-                opacity: 0.2;
-                @include setfontsize(155px);
-                z-index: 0;
-                color: $theme-color;
-            }
-        }
-        
-        .left-text {
-            width: 55%;
-        }
-        
-        .right-text {
-            width:40%;
-        }
-        
-        .button-container {
-            button {
-                @extend %button-design;
-                @include setfontsize(18px);
-                @include setborderradius(7px);
-                padding: 6px 9px;
-                position: relative;
-            }
         }
     }
 }

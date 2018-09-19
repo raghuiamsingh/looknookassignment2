@@ -1,212 +1,74 @@
-.header-part {
-    height: $value-header-height;
+.main-header {
+    min-height: $value-header-height;
     background: $primary-color;
     .head-left {
-        height: $value-header-height;
+        min-height: $value-header-height;
         text-align: left;
         width: 30%;
         position: relative;
 
-        .header-social-icons {
+        .social-icons-holder {
             position: absolute;
             bottom: 10px;
             left: 15px;
-
-            .social-icon-holder {
-                display: inline-block;
-                background: url("../img/social_icon_small.png");
-                width: 24px;
-                height: 24px;
-            }
-
-            .icon-facebook {
-                background-position: $facebook-position;
-            }
-
-            .icon-pinterest {
-                background-position: $pinterest-position;
-            }
-
-            .icon-twitter {
-                background-position: $twitter-position;
-            }
         }
     }
 
-    .head-top {
-        .head-logo {
-            height: $value-header-height;
-            text-align: center;
-            width: 40%;
-            position: relative;
-
-            .main-logo {
-                z-index: 600;
-                position: absolute;
-                left: 39%;
-                top: 50%;
-                img {
-                    @include transform(scale(1.4));
-                }
-            }
-        }
+    .head-logo {
+        min-height: $value-header-height;
+        text-align: center;
+        width: 40%;
+        position: relative;
     }
 
     .head-right {
         width: 30%;
-        .menu-icon {
-            text-align: right;
-            color: $secondary-color;
-            @include setfontsize(32px);
-            font-weight: bold;
-            padding-top: 20px;
-            padding-right: 26px;
-            display: none;
-        }
-        .search-bar {
-            display: inline-block;
-            margin: $margin-right-links;
-            .search-input {
-                @include setborderradius(5px);
-                padding: 4px 6px;
-            }
-            .search-button {
-                @extend %button-design;
-                padding: 5px 11px;
-                margin-left: 5px;
-            }
-        }
+    }
+    
+    .header-search {
+        margin: $margin-right-links;
+    }
+    
+    .down-arrow {
+        @extend %menu-down-arrow;
+    }
 
-        .quick-links {
-            display: inline-block;
-            margin: 0 auto;
-            color: $secondary-color;
-            font-weight: bold;
-            text-align: right;
-            margin-right: 6%;
-            margin-top: 5px;
-            @include setfontsize(19px);
-            .down-arrow {
-                @extend %menu-down-arrow;
-            }
+    .arrow-cart {
+        margin-right: 0px;
+    }
+}
 
-            .arrow-cart{
-                margin-right: 0px;
+.cart-icon {
+    @extend %menu-down-arrow;
+    @include setbackgroundposition(-360px -121px);
+    @include transform(scale(1.7));
+    margin-right: 4px;
+}
+
+.menu-part {
+    min-height: $value-menu-height;
+    background: $menu-background;
+    width: 50%;
+    @include setboxsizing(border-box);
+    display: inline-block;
+    .menu-group {
+        padding: 0px;
+        height: inherit;
+        .menu-item {
+            width: 33%;
+            font-weight: bold;
+            line-height: $value-menu-height;
+            text-align: center;
+            a {
+                color: $primary-color;
+                @extend %transform-uppercase;
             }
         }
     }
 }
 
-#header {
-    #mobile-dashboard {
-        z-index: 502;
-        display: none;
-        position: absolute;
-        color: $secondary-color;
-        top: 77px;
-        width: 100%;
-        background:$primary-color;
-        background: $dashboard-background;
-        .dashboard-container {
-            width: 100%;
-            display: table;
-            padding-top: 80px;
-            .dashboard-row {
-                display: table-row;
-                .dashboard-cell {
-                    display: table-cell;
-                    @extend %transform-uppercase;
-                    padding: 40px;
-                    text-align: center;
-                    width: 50%;
-                    border: 1px solid $border-color;
-                    border-right-color: transparent;
-                    border-bottom-color: transparent;
-                }
-            }
-        }
-        .dashboard-search {
-            border-top: 1px solid $border-color;
-            padding: 40px 0px;
-            text-align: center;
-            .search-input {
-                @include setborderradius(5px);
-                padding: 4px 6px;
-            }
-            .search-button {
-                @extend %button-design;
-                padding: 5px 11px;
-                margin-left: 5px;
-            }
-        }
-        .dashboard-header {
-            margin-top: -25px;
-            margin-left: 15px;
-            font-weight: bold;
-        }
-    }
-    
-    .cart-icon {
-        @extend %menu-down-arrow;
-        @include setbackgroundposition(-360px -121px);
-        @include transform(scale(1.7));
-        margin-right: 4px;
-    }
-    .main-menu {
-        .menu-part {
-            height: $value-menu-height;
-            background: $menu-background;
-            width: 50%;
-            box-sizing: border-box;
-            display: table;
-            table-layout: fixed;
-            .menu-ul {
-                display: table-row;
-                .menu-li {
-                    font-weight: bold;
-                    line-height: $value-menu-height;
-                    display: table-cell;
-                    text-align: center;
-                    .menu-item {
-                        text-decoration: none;
-                        color: $primary-color;
-                        @extend %transform-uppercase;
-                    }
-                }
-                .align-to-right {
-                    text-align: right;
-                }
-            }
-            .down-arrow {
-                @extend %menu-down-arrow;
-                background: url(../img/glyphicons-halflings.png);
-                @include setbackgroundposition(-263px -73px);
-            }
-        }
-        .take-upspace {
-            width: 10%;
-        }
-    }
-    .infoblock-1 {
-        .block-part {
-            height: $value-infoblock-height;
-            background: $theme-color;
-            width: 50%;
-            box-sizing: border-box;
-            display: table;
-            table-layout: fixed;
-            .menu-ul {
-                display: table-row;
-                .menu-li {
-                    @include setfontsize(20px);
-                    line-height: $value-infoblock-height;
-                    display: table-cell;
-                    color: $text-color;
-                }
-            }
-        }
-        .take-upspace {
-            width: 10%;
-        }
-    }
+.down-arrow {
+    @extend %menu-down-arrow;
+    background: url(../img/glyphicons-halflings.png);
+    @include setbackgroundposition(-263px -73px);
 }

@@ -12,12 +12,15 @@
 %button-design {
     background-color: $theme-color;
     border: none;
-    color: #FFFFFF;
+    color: $secondary-color;
     font-weight: bold;
     @include setborderradius(5px);
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    @include transform(perspective(1px) translateZ(0));
+    @include setbuttontransition('color, background-color');
 }
 
 %transform-uppercase {
@@ -27,5 +30,12 @@
 %block-text {
     @extend %transform-uppercase;
     font-weight: bold;
-    color: #000000;
+    color: $primary-color;
+}
+
+%custom-separator {
+    border-top: 4px solid $theme-color;
+    width: 42%;
+    margin: 0.5em 0;
+    content: '';
 }

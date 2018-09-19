@@ -1,0 +1,14 @@
+/*Add SCSS variable definitions*/
+@import "variables";
+
+/*Add Mixins*/
+@import "mixins";
+
+/*Add placeholder classes*/
+@import "placeholders";
+
+/*Add global CSS classes for basic transitions*/
+@import "globals";
+
+/*Add generic CSS classes for basic transitions*/
+@import "generic";

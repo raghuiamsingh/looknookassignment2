@@ -1,16 +1,5 @@
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-
-/*Add global CSS classes for basic transitions*/
-@import "partials/globals";
-
-/*Add SCSS variable definitions*/
-@import "partials/variables";
-
-/*Add Mixins*/
-@import "partials/mixins";
-
-/*Add placeholder classes*/
-@import "partials/placeholders";
+/*Add Partials*/
+@import "partials/index";
 
 /*Add Custom CSS definitions*/
 @import "custom";
