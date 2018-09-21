@@ -1,0 +1,107 @@
+.main-header {
+    min-height: $value-header-height;
+    background: $primary-color;
+}
+
+.head-left {
+    min-height: $value-header-height;
+    text-align: left;
+    width: 30%;
+    position: relative;
+
+    .social-icons-holder {
+        position: absolute;
+        bottom: 10px;
+        left: 15px;
+    }
+    
+    .social-icon-link {
+        @include transform(scale(1.3));
+        margin: 0 4px;
+    }
+    
+    .social-icon-link:nth-child(2) {
+        margin-right: 0px;
+    }
+}
+
+.quick-links {
+    display: flex;
+    align-items: center;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+}
+
+.head-logo {
+    min-height: $value-header-height;
+    text-align: center;
+    width: 40%;
+    position: relative;
+}
+
+.head-right {
+    width: 30%;
+}
+
+.header-search {
+    margin: $margin-right-links;
+}
+
+.down-arrow {
+    @extend %menu-down-arrow;
+}
+
+.arrow-cart {
+    margin-right: 0px;
+}
+
+.cart-icon {
+    @extend %menu-down-arrow;
+    @include setbackgroundposition(-360px -121px);
+    @include transform(scale(1.7));
+    margin-right: 4px;
+}
+
+.menu-part {
+    min-height: $value-menu-height;
+    background: $menu-background;
+    width: 50%;
+    @include setboxsizing(border-box);
+    display: inline-block;
+    .menu-group {
+        padding: 0px;
+        height: inherit;
+        .menu-item {
+            width: 33%;
+            font-weight: bold;
+            line-height: $value-menu-height;
+            text-align: center;
+            a {
+                color: $primary-color;
+                @extend %transform-uppercase;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    
+    .menu-group:nth-child(1) {
+        .menu-item:nth-child(1) {
+            text-align: right;
+        }
+    }
+
+    .menu-group:last-child {
+        .menu-item:last-child {
+            text-align: left;
+        }
+    }
+    
+    .down-arrow {
+        @extend %menu-down-arrow;
+        background: url(../img/glyphicons-halflings.png);
+        @include setbackgroundposition(-263px -73px);
+    }
+}

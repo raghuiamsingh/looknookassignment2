@@ -1,0 +1,59 @@
+@mixin transform($value) {
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -ms-transform: $value;
+    -o-transform: $value;
+    transform: $value;
+}
+
+@mixin setbackgroundposition($value) {
+    background-position: $value;
+}
+
+@mixin setbuttontransition($value) {
+    -webkit-transition-property: $value;
+    -moz-transition-property: $value;
+    -ms-transition-property: $value;
+    -o-transition-property: $value;
+    transition-property: $value;
+}
+
+@mixin setfontsize($value) {
+    font-size: $value;
+}
+
+@mixin setborderradius($value) {
+    -moz-border-radius: $value;
+    -webkit-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin setboxsizing($value) {
+    -webkit-box-sizing: $value;
+    -moz-box-sizing: $value;
+    -ms-box-sizing: $value;
+    -o-box-sizing: $value;
+    box-sizing: $value;
+}
+
+@mixin setbuttondesign($padding, $fontsize:"", $borderradius:"", $fontweight:"") {
+    @extend %button-design;
+    padding: $padding;
+    @if $borderradius != '' {
+        @include setborderradius($borderradius);
+    }
+    
+    @if $fontsize != '' {
+        @include setfontsize($fontsize);
+    }
+    
+    @if $fontweight != '' {
+        font-weight: $fontweight;
+    }
+    
+    &:hover {
+        background-color: darken($theme-color, 5%);
+    }
+}

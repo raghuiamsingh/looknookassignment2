@@ -1,0 +1,98 @@
+.cycle-slideshow {
+    min-width: 200px;
+    margin: 0px auto;
+    padding: 0;
+    position: relative;
+    background: url(http://malsup.github.com/images/spinner.gif) 50% 50% no-repeat;
+
+    img { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        display: block;
+        cursor: pointer;
+        min-height: 250px;
+        max-height: 360px;
+    }
+
+    img:first-child {
+        z-index: 100;
+    }
+
+    .cycle-pager { 
+        text-align: center;
+        width: 100%;
+        z-index: 500;
+        position: absolute;
+        bottom: -13px;
+        left: -23px;
+        overflow: hidden;
+        span {
+            @include setboxsizing(border-box);
+            @include setfontsize(75px);
+            padding: 0px 15px;
+            width: 16px;
+            height: 16px; 
+            display: inline-block;
+            color: $cycle-color;
+            cursor: pointer;
+            &.cycle-pager-active {
+                color: $cycle-color-active;
+            }
+        }
+    }
+}
+
+.slider-button {
+    position: absolute;
+    z-index: 501;
+    bottom: 0px;
+    left: 12%;
+    .slider-button-container {
+        button {
+            @include setbuttondesign(11px 15px, 17px, 7px 7px 0px 0px, normal);
+        }
+    }
+}
+
+.slider-right-content {
+    position: absolute;
+    z-index: 501;
+    width: 35%;
+    left: 60%;
+    top: 10%;
+    background: $background-opacity;
+    padding: 17px;
+    height: auto;
+    .content-wrapper {
+        .top-heading {
+            @extend %block-text;
+            letter-spacing: 0.34em;
+            @include setfontsize(25px);
+            padding-bottom: 5px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .bottom-heading {
+            @extend %block-text;
+            letter-spacing: 4px;
+            @include setfontsize(23px);
+            padding-bottom: 10px;
+            padding-top: 5px;
+            width: 100%;
+            text-align: center;
+        }
+        .text-content-wrapper {
+            @include setfontsize(15px);
+        }
+        .right-content-button-container {
+            padding-top: 18px;
+            button {
+                @include setbuttondesign(6px 13px, 16px, 7px, normal);
+            }
+        } 
+    }
+}

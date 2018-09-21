@@ -1,0 +1,68 @@
+.getting-started {
+    background: $secondary-color;
+    width: 100%;
+}
+
+.get-started-header {
+    @extend %transform-uppercase;
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    h1 {
+        margin: 0;
+        color: $theme-color;
+        letter-spacing: 3px;
+        @include setfontsize(22px);
+        text-align: center;
+    }
+    &:before, &:after {
+        content: '';
+        border-top: 4px solid $theme-color;
+        width: 33%;
+        margin: 0 0.5em;
+    }
+}
+
+.get-started-main-content {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 7%;
+}
+
+.content-block {
+    width: 50%;
+    text-align: center;
+    img {
+        border: 1px solid $image-border-color;
+    }
+
+    p.text-content {
+        padding: 25px;
+        margin: 0 auto;
+        @include setfontsize(17px);
+        line-height: 1.5;
+        position: relative;
+        .entypo-heart {
+            font-family: 'entypo', sans-serif;
+            color: $theme-color;
+            @include setfontsize(25px);
+            padding-right: 3px;
+        }
+    }
+
+    .left-text {
+        width: 63%;
+    }
+
+    .right-text {
+        width: 50%;
+    }
+
+    .get-started-button-container {
+        button {
+            @include setbuttondesign(9px, 18px, 7px, '');
+            position: relative;
+        }
+    }
+}

@@ -1,0 +1,145 @@
+.footer {
+    min-height: 238px;
+    background: $primary-color;
+}
+
+.logo-footer {
+    width: 5%;
+    text-align: center;
+    position: relative;
+}
+
+div.logo {
+    position: absolute;
+    bottom: -42px;
+    left: 33px;
+    img {
+        @include transform(scale(1.15));
+    }
+}
+
+.menu-footer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 6%;
+    padding-right: 3%;
+    @include setboxsizing(border-box);
+}
+
+.menu {
+    @include setboxsizing(border-box);
+    width: 100%;
+    .menu-group {
+        width: 100%;
+        min-height: 50px;
+        .menu-item {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 20%;
+            @include setfontsize(16px);
+            a {
+                color: $secondary-color;
+            }
+        }
+    }
+
+    .up-arrow {
+        @extend %menu-down-arrow;
+        background: url(../img/glyphicons-halflings-white.png);
+        @include setbackgroundposition(-263px -73px);
+        @include transform(rotate(-90deg));
+    }
+}
+
+.callus-wrapper {
+    width: 40%;
+    text-align: right;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    .text-part {
+        @include setfontsize(17px);
+        font-weight: bold;
+        span {
+            width: 100%;
+            display: inline-block;
+        }
+        .line-1 {
+            color: $theme-color;
+            @include setfontsize(14px);
+        }
+        .line-2 {
+            color: $secondary-color;
+        }
+    }
+    .icon-part {
+        color: $theme-color;
+        float: left;
+        @include setfontsize(35px);
+        padding-left: 15px;
+    }
+}
+
+.content-with-recents {
+    color: $secondary-color;
+    @include setboxsizing(border-box);
+    .designer-info {
+        width: 45%;
+        padding: 0 0 0 10.7%;
+        span {
+            width: 100%;
+            display: inline-block;
+        }
+
+        .designer-head {
+            @include setfontsize(19px);
+            font-weight: bold;
+        }
+
+        .designer-readmore {
+            a.readmore-link {
+                color: $theme-color;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .recent-boards {
+        width: 52%;
+        .recent-head {
+            font-weight: bold;
+        }
+        span {
+            width: 100%;
+            display: inline-block;
+        }
+        .boards {
+            padding-top: 7px;
+            img {
+                max-height: 70px;
+                width: 102px;
+                padding-right: 4px;
+                padding-bottom: 8px;
+                @include setboxsizing(border-box);
+            }
+        }
+    }
+}
+
+.rights-reserved {
+    display: flex;
+    min-height: 55px;
+    margin-top: 15px;
+    .copyright {
+        color: $secondary-color;
+        @include setfontsize(13px);
+        padding-right: 15px;
+    }
+    .social-icons-holder {
+        text-align: right;
+        @include setboxsizing(border-box);
+    }
+}
