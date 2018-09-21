@@ -31,7 +31,7 @@
         .slider-button-container {
             button {
                 @include setfontsize(13px);
-                padding: 7px 10px;
+                padding: 8px 10px;
             }
         }
     }
@@ -57,16 +57,20 @@
         .slider-bottom-block {
             width: auto;
             margin: 0px 10px;
-            padding-bottom: 20px;
-            h1 {
+            padding-bottom: 15px;
+            h2 {
                 @include setfontsize(28px);
                 margin-bottom: 0px;
             }
             p {
-                @include setfontsize(16px);
-                margin-top: 0px;
-                margin-bottom: 0px;
+                @include setfontsize(15px);
+                width: 80%;
+                margin: 0 auto;
             }
+        }
+        
+        .slider-bottom-block:last-of-type {
+            padding-bottom: 25px;
         }
 
         .separator {
@@ -111,14 +115,17 @@
     }
 
     .get-started-header {
-        margin: 20px auto;
+        margin: 30px auto;
         .customhr-line {
             width: 17%;
         }
-        h2 {
-            @include setfontsize(18px);
-            padding: 0 10px;
+        h1 {
+            @include setfontsize(19px);
         }
+    }
+    
+    .get-started-header:before, .get-started-header:after {
+        width: 15%;
     }
 
     .get-started-main-content {
@@ -129,12 +136,13 @@
             p.text-content {
                 padding: 15px 25px;
                 @include setfontsize(18px);
+                line-height: 30px;
             }
             .left-text {
-                width: 70%; 
+                width: 76%; 
             }
             .right-text {
-                width: 55%;
+                width: 60%;
             }
             img {
                 max-height: 190px;
@@ -152,6 +160,8 @@
     .menu-footer 
     {
         width: 100%;
+        padding-right: 0%;
+        padding-left: 13%;
     }
 
     .menu {
@@ -215,9 +225,30 @@
         top: -25%;
         left: 35%;
         @include setfontsize(140px);
+        line-height: 210px;
     }
     
     .carousel-nav {
         display: none;
+    }
+    
+    div.logo {
+        left: 24px;
+        bottom: -35px;
+    }
+    
+    .getting-started {
+        padding-bottom: 9px;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS */
+    .subscriber-box {
+        height: 40px;
+    }
+
+    .menu .menu-group {
+        height: 20px;
     }
 }

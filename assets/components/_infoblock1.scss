@@ -8,15 +8,13 @@
     vertical-align: top;
     text-align: center;
     width: 30%;
-    margin: 13px;
+    margin: 36px 16px 23px 16px;
     display: inline-block;
     h2 {
         @extend %transform-uppercase;
         margin-top: 0px;
         @include setfontsize(26px);
-    }
-    p {
-        padding: 0px 20px;
+        margin-bottom: 10px;
     }
 }
 
@@ -40,7 +38,7 @@
     left: 0;
     height: auto;
     display: none;
-    padding: 20px 60px;
+    padding: 17px 60px 20px 63px;
     margin-bottom: 20px;
     .content-wrapper {
         .top-heading {
@@ -58,7 +56,7 @@
             @extend %block-text;
             letter-spacing: 0.23em;
             @include setfontsize(22px);
-            padding-bottom: 10px;
+            padding-bottom: 15px;
             padding-top: 5px;
         }
         .right-content-button-container {

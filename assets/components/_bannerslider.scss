@@ -26,8 +26,8 @@
         width: 100%;
         z-index: 500;
         position: absolute;
-        bottom: 0px;
-        left: 0px;
+        bottom: -13px;
+        left: -23px;
         overflow: hidden;
         span {
             @include setboxsizing(border-box);
@@ -52,7 +52,7 @@
     left: 12%;
     .slider-button-container {
         button {
-            @include setbuttondesign(10px 18px, 17px, 7px 7px 0px 0px, normal);
+            @include setbuttondesign(11px 15px, 17px, 7px 7px 0px 0px, normal);
         }
     }
 }
@@ -78,8 +78,8 @@
 
         .bottom-heading {
             @extend %block-text;
-            letter-spacing: 0.26em;
-            @include setfontsize(21px);
+            letter-spacing: 4px;
+            @include setfontsize(23px);
             padding-bottom: 10px;
             padding-top: 5px;
             width: 100%;
@@ -91,7 +91,7 @@
         .right-content-button-container {
             padding-top: 18px;
             button {
-                @include setbuttondesign(6px 9px, 16px, 7px, normal);
+                @include setbuttondesign(6px 13px, 16px, 7px, normal);
             }
         } 
     }

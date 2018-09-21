@@ -5,9 +5,9 @@
     align-items: center;
     .box-left {
         text-align: center;
-        width: 45%;
+        width: 50%;
         color: $secondary-color;
-        @include setfontsize(19px);
+        @include setfontsize(18px);
     }
     
     .box-middle {
@@ -16,8 +16,12 @@
         align-items: center;
 
         .subscribe-button {
-            @include setbuttondesign(4px 14px, 14px, '', 600);
+            @include setbuttondesign(5px 12px, 14px, 8px, 600);
             margin-left: 23px;
+        }
+        
+        .email-field-container {
+            width: 60%;
         }
     }
     
@@ -29,7 +33,7 @@
             width: 50%;
             text-align: right;
             color: $secondary-color;
-            @include setfontsize(18px);
+            @include setfontsize(16px);
             padding-right: 10px;
             @include setboxsizing(border-box);
         }

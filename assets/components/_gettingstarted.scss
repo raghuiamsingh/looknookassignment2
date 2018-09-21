@@ -13,20 +13,21 @@
         margin: 0;
         color: $theme-color;
         letter-spacing: 3px;
-        padding: 0 12px;
-        @include setfontsize(21px);
+        @include setfontsize(22px);
+        text-align: center;
     }
     &:before, &:after {
         content: '';
         border-top: 4px solid $theme-color;
-        width: 34%;
+        width: 33%;
+        margin: 0 0.5em;
     }
 }
 
 .get-started-main-content {
     display: flex;
     align-items: flex-start;
-    padding-bottom: 6%;
+    padding-bottom: 7%;
 }
 
 .content-block {
@@ -51,16 +52,16 @@
     }
 
     .left-text {
-        width: 56%;
+        width: 63%;
     }
 
     .right-text {
-        width:45%;
+        width: 50%;
     }
 
     .get-started-button-container {
         button {
-            @include setbuttondesign(6px 9px, 18px, 7px, '');
+            @include setbuttondesign(9px, 18px, 7px, '');
             position: relative;
         }
     }

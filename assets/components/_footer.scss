@@ -1,5 +1,5 @@
 .footer {
-    min-height: 234px;
+    min-height: 238px;
     background: $primary-color;
 }
 
@@ -11,7 +11,11 @@
 
 div.logo {
     position: absolute;
-    bottom: -40px;
+    bottom: -42px;
+    left: 33px;
+    img {
+        @include transform(scale(1.15));
+    }
 }
 
 .menu-footer {
@@ -19,6 +23,7 @@ div.logo {
     display: flex;
     align-items: center;
     padding-left: 6%;
+    padding-right: 3%;
     @include setboxsizing(border-box);
 }
 
@@ -29,9 +34,11 @@ div.logo {
         width: 100%;
         min-height: 50px;
         .menu-item {
+            display: flex;
+            align-items: center;
             text-align: center;
             width: 20%;
-            @include setfontsize(19px);
+            @include setfontsize(16px);
             a {
                 color: $secondary-color;
             }
@@ -50,6 +57,8 @@ div.logo {
     width: 40%;
     text-align: right;
     margin: 15px auto;
+    display: flex;
+    align-items: center;
     .text-part {
         @include setfontsize(17px);
         font-weight: bold;
@@ -59,6 +68,7 @@ div.logo {
         }
         .line-1 {
             color: $theme-color;
+            @include setfontsize(14px);
         }
         .line-2 {
             color: $secondary-color;
@@ -76,8 +86,8 @@ div.logo {
     color: $secondary-color;
     @include setboxsizing(border-box);
     .designer-info {
-        width: 40%;
-        padding: 0 0 0 9.1%;
+        width: 45%;
+        padding: 0 0 0 10.7%;
         span {
             width: 100%;
             display: inline-block;
@@ -98,7 +108,7 @@ div.logo {
     }
 
     .recent-boards {
-        width: 50%;
+        width: 52%;
         .recent-head {
             font-weight: bold;
         }
@@ -110,7 +120,10 @@ div.logo {
             padding-top: 7px;
             img {
                 max-height: 70px;
+                width: 102px;
                 padding-right: 4px;
+                padding-bottom: 8px;
+                @include setboxsizing(border-box);
             }
         }
     }
@@ -119,10 +132,10 @@ div.logo {
 .rights-reserved {
     display: flex;
     min-height: 55px;
-    margin-top: 10px;
+    margin-top: 15px;
     .copyright {
         color: $secondary-color;
-        @include setfontsize(14px);
+        @include setfontsize(13px);
         padding-right: 15px;
     }
     .social-icons-holder {

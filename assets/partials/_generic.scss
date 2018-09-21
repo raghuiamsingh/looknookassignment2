@@ -20,8 +20,8 @@
 .main-logo {
     z-index: 600;
     position: absolute;
-    left: 39%;
-    top: 50%;
+    left: 39.2%;
+    top: 45%;
     img {
         @include transform(scale(1.4));
     }
@@ -33,15 +33,16 @@
     @include setfontsize(32px);
     font-weight: bold;
     padding-top: 20px;
-    padding-right: 26px;
+    padding-right: 29px;
     display: none;
 }
 
 .customized-input {
     @include setborderradius(5px);
-    padding: 4px 6px;
+    padding: 3px 0px 7px 0px;
     &::placeholder {
         opacity: 0.3;
+        padding-left: 7px;
     }
 }
 
@@ -50,14 +51,15 @@
     padding: 8px 7px;
     background: $field-background;
     color: $secondary-color;
+    width: 100%;
     &::placeholder {
         color: $secondary-color;
     }
 }
 
 .search-button {
-    @include setbuttondesign(5px 11px);
-    margin-left: 5px;
+    @include setbuttondesign(5px 10px);
+    margin-left: 6px;
 }
 
 .quick-links {
@@ -68,7 +70,7 @@
     text-align: right;
     margin-right: 6%;
     margin-top: 5px;
-    @include setfontsize(19px);
+    @include setfontsize(20px);
 }
 
 .slider-top-content {
@@ -86,7 +88,7 @@
 
 .text-with-separator {
     @extend %block-text;
-    @include setfontsize(18px);
+    @include setfontsize(19px);
     width: 100%;
     text-align: center;
     &:before {
@@ -101,8 +103,9 @@
 }
 
 .page-divider {
-    height: 7px;
+    height: 6px;
     img {
+        height: inherit;
         width: 100%;
         vertical-align: top;
     }
